@@ -1,0 +1,2925 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+        <calculation class='tableau' formula='2.' />
+        <range granularity='1.0' max='10.0' min='2.0' />
+      </column>
+    </datasource>
+    <datasource caption='HR_Analytics' inline='true' name='federated.0fixri604hthtq10q908500haptj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HR_Analytics' name='textscan.0zwoo221b30ey51868di01seqtwv'>
+            <connection class='textscan' directory='C:/Users/Administrator/Desktop/Data science/Power Bi For Data Analysics/HR Analysics' filename='HR_Analytics.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0zwoo221b30ey51868di01seqtwv' name='HR_Analytics.csv' table='[HR_Analytics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='EmpID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='AgeGroup' ordinal='2' />
+            <column datatype='string' name='Attrition' ordinal='3' />
+            <column datatype='string' name='BusinessTravel' ordinal='4' />
+            <column datatype='integer' name='DailyRate' ordinal='5' />
+            <column datatype='string' name='Department' ordinal='6' />
+            <column datatype='integer' name='DistanceFromHome' ordinal='7' />
+            <column datatype='integer' name='Education' ordinal='8' />
+            <column datatype='string' name='EducationField' ordinal='9' />
+            <column datatype='integer' name='EmployeeCount' ordinal='10' />
+            <column datatype='integer' name='EmployeeNumber' ordinal='11' />
+            <column datatype='integer' name='EnvironmentSatisfaction' ordinal='12' />
+            <column datatype='string' name='Gender' ordinal='13' />
+            <column datatype='integer' name='HourlyRate' ordinal='14' />
+            <column datatype='integer' name='JobInvolvement' ordinal='15' />
+            <column datatype='integer' name='JobLevel' ordinal='16' />
+            <column datatype='string' name='JobRole' ordinal='17' />
+            <column datatype='integer' name='JobSatisfaction' ordinal='18' />
+            <column datatype='string' name='MaritalStatus' ordinal='19' />
+            <column datatype='integer' name='MonthlyIncome' ordinal='20' />
+            <column datatype='string' name='SalarySlab' ordinal='21' />
+            <column datatype='integer' name='MonthlyRate' ordinal='22' />
+            <column datatype='integer' name='NumCompaniesWorked' ordinal='23' />
+            <column datatype='string' name='Over18' ordinal='24' />
+            <column datatype='string' name='OverTime' ordinal='25' />
+            <column datatype='integer' name='PercentSalaryHike' ordinal='26' />
+            <column datatype='integer' name='PerformanceRating' ordinal='27' />
+            <column datatype='integer' name='RelationshipSatisfaction' ordinal='28' />
+            <column datatype='integer' name='StandardHours' ordinal='29' />
+            <column datatype='integer' name='StockOptionLevel' ordinal='30' />
+            <column datatype='integer' name='TotalWorkingYears' ordinal='31' />
+            <column datatype='integer' name='TrainingTimesLastYear' ordinal='32' />
+            <column datatype='integer' name='WorkLifeBalance' ordinal='33' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='34' />
+            <column datatype='integer' name='YearsInCurrentRole' ordinal='35' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='36' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='37' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0zwoo221b30ey51868di01seqtwv' name='HR_Analytics.csv' table='[HR_Analytics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='EmpID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='AgeGroup' ordinal='2' />
+            <column datatype='string' name='Attrition' ordinal='3' />
+            <column datatype='string' name='BusinessTravel' ordinal='4' />
+            <column datatype='integer' name='DailyRate' ordinal='5' />
+            <column datatype='string' name='Department' ordinal='6' />
+            <column datatype='integer' name='DistanceFromHome' ordinal='7' />
+            <column datatype='integer' name='Education' ordinal='8' />
+            <column datatype='string' name='EducationField' ordinal='9' />
+            <column datatype='integer' name='EmployeeCount' ordinal='10' />
+            <column datatype='integer' name='EmployeeNumber' ordinal='11' />
+            <column datatype='integer' name='EnvironmentSatisfaction' ordinal='12' />
+            <column datatype='string' name='Gender' ordinal='13' />
+            <column datatype='integer' name='HourlyRate' ordinal='14' />
+            <column datatype='integer' name='JobInvolvement' ordinal='15' />
+            <column datatype='integer' name='JobLevel' ordinal='16' />
+            <column datatype='string' name='JobRole' ordinal='17' />
+            <column datatype='integer' name='JobSatisfaction' ordinal='18' />
+            <column datatype='string' name='MaritalStatus' ordinal='19' />
+            <column datatype='integer' name='MonthlyIncome' ordinal='20' />
+            <column datatype='string' name='SalarySlab' ordinal='21' />
+            <column datatype='integer' name='MonthlyRate' ordinal='22' />
+            <column datatype='integer' name='NumCompaniesWorked' ordinal='23' />
+            <column datatype='string' name='Over18' ordinal='24' />
+            <column datatype='string' name='OverTime' ordinal='25' />
+            <column datatype='integer' name='PercentSalaryHike' ordinal='26' />
+            <column datatype='integer' name='PerformanceRating' ordinal='27' />
+            <column datatype='integer' name='RelationshipSatisfaction' ordinal='28' />
+            <column datatype='integer' name='StandardHours' ordinal='29' />
+            <column datatype='integer' name='StockOptionLevel' ordinal='30' />
+            <column datatype='integer' name='TotalWorkingYears' ordinal='31' />
+            <column datatype='integer' name='TrainingTimesLastYear' ordinal='32' />
+            <column datatype='integer' name='WorkLifeBalance' ordinal='33' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='34' />
+            <column datatype='integer' name='YearsInCurrentRole' ordinal='35' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='36' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='37' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmpID]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>EmpID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attrition]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Attrition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessTravel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessTravel]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>BusinessTravel</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DailyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DailyRate]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>DailyRate</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistanceFromHome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DistanceFromHome]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>DistanceFromHome</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EducationField</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EducationField]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>EducationField</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeCount]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>EmployeeCount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeNumber]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>EmployeeNumber</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnvironmentSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnvironmentSatisfaction]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>EnvironmentSatisfaction</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HourlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HourlyRate]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>HourlyRate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobInvolvement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobInvolvement]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>JobInvolvement</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobLevel]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>JobLevel</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobRole</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobRole]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>JobRole</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobSatisfaction]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>JobSatisfaction</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalStatus]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>MaritalStatus</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyIncome]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>MonthlyIncome</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalarySlab</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SalarySlab]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>SalarySlab</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyRate]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>MonthlyRate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumCompaniesWorked</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumCompaniesWorked]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>NumCompaniesWorked</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over18</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Over18]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>Over18</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverTime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OverTime]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>OverTime</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PercentSalaryHike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PercentSalaryHike]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>PercentSalaryHike</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PerformanceRating]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>PerformanceRating</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelationshipSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelationshipSatisfaction]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>RelationshipSatisfaction</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StandardHours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StandardHours]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>StandardHours</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockOptionLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StockOptionLevel]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>StockOptionLevel</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalWorkingYears</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalWorkingYears]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>TotalWorkingYears</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainingTimesLastYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrainingTimesLastYear]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>TrainingTimesLastYear</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkLifeBalance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WorkLifeBalance]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>WorkLifeBalance</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsAtCompany</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsAtCompany]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>YearsAtCompany</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsInCurrentRole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsInCurrentRole]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>YearsInCurrentRole</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsSinceLastPromotion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsSinceLastPromotion]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>YearsSinceLastPromotion</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsWithCurrManager</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsWithCurrManager]</local-name>
+            <parent-name>[HR_Analytics.csv]</parent-name>
+            <remote-alias>YearsWithCurrManager</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+      </column>
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+      <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+      </column>
+      <column caption='Atrition Rate' datatype='real' datatype-customized='true' name='[Calculation_217017265241436163]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([Calculation_217017265238216706])/SUM([EmployeeCount])' />
+      </column>
+      <column caption='Active Count' datatype='integer' name='[Calculation_217017265242660868]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([EmployeeCount])-SUM([Calculation_217017265238216706])' />
+      </column>
+      <column caption='Daily Rate' datatype='integer' name='[DailyRate]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+      <column caption='Distance From Home' datatype='integer' name='[DistanceFromHome]' role='measure' type='quantitative' />
+      <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+      <column caption='Emp ID' datatype='string' name='[EmpID]' role='dimension' type='nominal' />
+      <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+      <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+      <column caption='Environment Satisfaction' datatype='integer' name='[EnvironmentSatisfaction]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Hourly Rate' datatype='integer' name='[HourlyRate]' role='measure' type='quantitative' />
+      <column caption='Job Involvement' datatype='integer' name='[JobInvolvement]' role='measure' type='quantitative' />
+      <column caption='Job Level' datatype='integer' name='[JobLevel]' role='measure' type='quantitative' />
+      <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='dimension' type='ordinal' />
+      <column caption='Marital Status' datatype='string' name='[MaritalStatus]' role='dimension' type='nominal' />
+      <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+      <column caption='Monthly Rate' datatype='integer' name='[MonthlyRate]' role='measure' type='quantitative' />
+      <column caption='Num Companies Worked' datatype='integer' name='[NumCompaniesWorked]' role='measure' type='quantitative' />
+      <column caption='Over Time' datatype='string' name='[OverTime]' role='dimension' type='nominal' />
+      <column caption='Percent Salary Hike' datatype='integer' name='[PercentSalaryHike]' role='measure' type='quantitative' />
+      <column caption='Performance Rating' datatype='integer' name='[PerformanceRating]' role='measure' type='quantitative' />
+      <column caption='Relationship Satisfaction' datatype='integer' name='[RelationshipSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Salary Slab' datatype='string' name='[SalarySlab]' role='dimension' type='nominal' />
+      <column caption='Standard Hours' datatype='integer' name='[StandardHours]' role='measure' type='quantitative' />
+      <column caption='Stock Option Level' datatype='integer' name='[StockOptionLevel]' role='measure' type='quantitative' />
+      <column caption='Total Working Years' datatype='integer' name='[TotalWorkingYears]' role='measure' type='quantitative' />
+      <column caption='Training Times Last Year' datatype='integer' name='[TrainingTimesLastYear]' role='dimension' type='quantitative' />
+      <column caption='Work Life Balance' datatype='integer' name='[WorkLifeBalance]' role='measure' type='quantitative' />
+      <column caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='measure' type='quantitative' />
+      <column caption='Years In Current Role' datatype='integer' name='[YearsInCurrentRole]' role='measure' type='quantitative' />
+      <column caption='Years Since Last Promotion' datatype='integer' name='[YearsSinceLastPromotion]' role='measure' type='quantitative' />
+      <column caption='Years With Curr Manager' datatype='integer' name='[YearsWithCurrManager]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='HR_Analytics.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Analytics.csv_7552A3B6FDF548139600B70628B51537]' role='measure' type='quantitative' />
+      <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Age (bin))' hidden='true' name='[Action (Age (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age (bin)]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#b07aa1'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Department:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Research &amp; Development&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;Human Resources&quot;</bucket>
+            </map>
+            <map to='#9bc7e4'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+          <calculation class='tableau' formula='2.' />
+          <range granularity='1.0' max='10.0' min='2.0' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='HR_Analytics.csv' id='HR_Analytics.csv_7552A3B6FDF548139600B70628B51537'>
+            <properties context=''>
+              <relation connection='textscan.0zwoo221b30ey51868di01seqtwv' name='HR_Analytics.csv' table='[HR_Analytics#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='EmpID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='AgeGroup' ordinal='2' />
+                  <column datatype='string' name='Attrition' ordinal='3' />
+                  <column datatype='string' name='BusinessTravel' ordinal='4' />
+                  <column datatype='integer' name='DailyRate' ordinal='5' />
+                  <column datatype='string' name='Department' ordinal='6' />
+                  <column datatype='integer' name='DistanceFromHome' ordinal='7' />
+                  <column datatype='integer' name='Education' ordinal='8' />
+                  <column datatype='string' name='EducationField' ordinal='9' />
+                  <column datatype='integer' name='EmployeeCount' ordinal='10' />
+                  <column datatype='integer' name='EmployeeNumber' ordinal='11' />
+                  <column datatype='integer' name='EnvironmentSatisfaction' ordinal='12' />
+                  <column datatype='string' name='Gender' ordinal='13' />
+                  <column datatype='integer' name='HourlyRate' ordinal='14' />
+                  <column datatype='integer' name='JobInvolvement' ordinal='15' />
+                  <column datatype='integer' name='JobLevel' ordinal='16' />
+                  <column datatype='string' name='JobRole' ordinal='17' />
+                  <column datatype='integer' name='JobSatisfaction' ordinal='18' />
+                  <column datatype='string' name='MaritalStatus' ordinal='19' />
+                  <column datatype='integer' name='MonthlyIncome' ordinal='20' />
+                  <column datatype='string' name='SalarySlab' ordinal='21' />
+                  <column datatype='integer' name='MonthlyRate' ordinal='22' />
+                  <column datatype='integer' name='NumCompaniesWorked' ordinal='23' />
+                  <column datatype='string' name='Over18' ordinal='24' />
+                  <column datatype='string' name='OverTime' ordinal='25' />
+                  <column datatype='integer' name='PercentSalaryHike' ordinal='26' />
+                  <column datatype='integer' name='PerformanceRating' ordinal='27' />
+                  <column datatype='integer' name='RelationshipSatisfaction' ordinal='28' />
+                  <column datatype='integer' name='StandardHours' ordinal='29' />
+                  <column datatype='integer' name='StockOptionLevel' ordinal='30' />
+                  <column datatype='integer' name='TotalWorkingYears' ordinal='31' />
+                  <column datatype='integer' name='TrainingTimesLastYear' ordinal='32' />
+                  <column datatype='integer' name='WorkLifeBalance' ordinal='33' />
+                  <column datatype='integer' name='YearsAtCompany' ordinal='34' />
+                  <column datatype='integer' name='YearsInCurrentRole' ordinal='35' />
+                  <column datatype='integer' name='YearsSinceLastPromotion' ordinal='36' />
+                  <column datatype='integer' name='YearsWithCurrManager' ordinal='37' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7D0D36DD38E2482492A6D40942C2E26A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HR ANALYSTICS DASHBOARD' type='sheet' worksheet='No of the employee by age group' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HR ANALYSTICS DASHBOARD' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Attrition Rate by Gender for different Age group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Tableau Semibold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+            </column>
+            <column caption='MIN(1)' datatype='integer' name='[Calculation_934215506692608001]' role='measure' type='quantitative' user:unnamed='Attrition Rate by Gender for different Age group'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[pcto:sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_934215506692608001]' derivation='User' name='[usr:Calculation_934215506692608001:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Female&quot;</bucket>
+              <bucket>&quot;Male&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' value='Gender' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[pcto:sum:Calculation_217017265238216706:qk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[pcto:sum:Calculation_217017265238216706:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'>&lt;</run>
+                <run fontcolor='#ffffff'>[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]</run>
+                <run fontcolor='#ffffff'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.69165748357772827' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk] + [federated.0fixri604hthtq10q908500haptj].[usr:Calculation_934215506692608001:qk])</rows>
+        <cols>[federated.0fixri604hthtq10q908500haptj].[none:AgeGroup:nk]</cols>
+      </table>
+      <simple-id uuid='{25D59BC6-3DE7-4E5A-8E91-5FBB7195B5BA}' />
+    </worksheet>
+    <worksheet name='Attrition by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f28e2b' fontname='Tableau Semibold' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]'>
+            <groupfilter function='level-members' level='[Age (bin)]' user:ui-action-filter='[Action1_7D0D36DD38E2482492A6D40942C2E26A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' value='28' />
+            <encoding attr='space' class='1' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' scope='cols' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' value='42' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Gender:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>AttritionCount:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Gender:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>AttritionCount:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.086961328983306885' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='8'>Gender:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>AttritionCount:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'>&lt;</run>
+                <run fontcolor='#ffffff'>[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]</run>
+                <run fontcolor='#ffffff'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]</rows>
+        <cols>([federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk] + [federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk])</cols>
+      </table>
+      <simple-id uuid='{57A4A29B-8AD9-47B2-94EA-1AE4B66D790B}' />
+    </worksheet>
+    <worksheet name='Department wise Attrition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f5f5f5'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+            </column>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[pcto:sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]'>
+            <groupfilter function='level-members' level='[Age (bin)]' user:ui-action-filter='[Action1_7D0D36DD38E2482492A6D40942C2E26A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]'>
+            <groupfilter function='level-members' level='[none:Department:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]</column>
+            <column>[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='Tableau Semibold' />
+            <format attr='color' value='#edc948' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]' />
+              <wedge-size column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[pcto:sum:Calculation_217017265238216706:qk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff'><![CDATA[<[federated.0fixri604hthtq10q908500haptj].[pcto:sum:Calculation_217017265238216706:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.2413811683654785' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BE904D10-DAE9-4E57-A9DD-4E9E32A9316C}' />
+    </worksheet>
+    <worksheet name='Education Field wise Attrition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Tableau Bold' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+            </column>
+            <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+            <column-instance column='[EducationField]' derivation='None' name='[none:EducationField:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]'>
+            <groupfilter function='level-members' level='[Age (bin)]' user:ui-action-filter='[Action1_7D0D36DD38E2482492A6D40942C2E26A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]'>
+            <groupfilter function='level-members' level='[none:EducationField:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]</column>
+            <column>[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]' value='#f5f5f5' />
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]' value='#ffffff' />
+            <format attr='text-align' field='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]' value='right' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]</rows>
+        <cols>[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]</cols>
+      </table>
+      <simple-id uuid='{D5CE01C6-39D4-4076-B5A8-49E9F7ABD72D}' />
+    </worksheet>
+    <worksheet name='Job Satisfication Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='dimension' type='ordinal' />
+            <column-instance column='[JobRole]' derivation='None' name='[none:JobRole:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobSatisfaction]' derivation='None' name='[none:JobSatisfaction:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]'>
+            <groupfilter function='level-members' level='[Age (bin)]' user:ui-action-filter='[Action1_7D0D36DD38E2482492A6D40942C2E26A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' value='#000000' />
+            <format attr='font-family' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' value='Tableau Semibold' />
+            <format attr='text-align' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' value='center' />
+            <format attr='color' data-class='total' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[none:JobRole:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[none:JobSatisfaction:ok]' value='#ffffff' />
+            <format attr='font-family' field='[federated.0fixri604hthtq10q908500haptj].[none:JobSatisfaction:ok]' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.0fixri604hthtq10q908500haptj].[none:JobRole:nk]</rows>
+        <cols total='true'>[federated.0fixri604hthtq10q908500haptj].[none:JobSatisfaction:ok]</cols>
+      </table>
+      <simple-id uuid='{6538810A-C849-4028-8F84-4502F0BF617E}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='AttritionCount' datatype='integer' name='[Calculation_217017265238216706]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition]=&apos;Yes&apos; then 1 ELSE 0 END' />
+            </column>
+            <column caption='Atrition Rate' datatype='real' datatype-customized='true' name='[Calculation_217017265241436163]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([Calculation_217017265238216706])/SUM([EmployeeCount])' />
+            </column>
+            <column caption='Active Count' datatype='integer' name='[Calculation_217017265242660868]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([EmployeeCount])-SUM([Calculation_217017265238216706])' />
+            </column>
+            <column datatype='integer' name='[Education]' role='measure' type='quantitative' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_217017265238216706]' derivation='Sum' name='[sum:Calculation_217017265238216706:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_217017265241436163]' derivation='User' name='[usr:Calculation_217017265241436163:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_217017265242660868]' derivation='User' name='[usr:Calculation_217017265242660868:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_217017265241436163:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_217017265242660868:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fixri604hthtq10q908500haptj].[avg:Age:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fixri604hthtq10q908500haptj].[sum:Calculation_217017265238216706:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_217017265241436163:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_217017265242660868:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]'>
+            <groupfilter function='level-members' level='[Age (bin)]' user:ui-action-filter='[Action1_7D0D36DD38E2482492A6D40942C2E26A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0fixri604hthtq10q908500haptj].[none:Education:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0fixri604hthtq10q908500haptj].[:Measure Names]</column>
+            <column>[federated.0fixri604hthtq10q908500haptj].[none:Education:qk]</column>
+            <column>[federated.0fixri604hthtq10q908500haptj].[Action (Age (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0fixri604hthtq10q908500haptj].[usr:Calculation_217017265241436163:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]' value='15' />
+            <format attr='color' field='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]' value='#f28e2b' />
+            <format attr='text-align' field='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0fixri604hthtq10q908500haptj].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='28'>&lt;</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='28'>[federated.0fixri604hthtq10q908500haptj].[Multiple Values]</run>
+                <run bold='true' fontcolor='#e6e6e6' fontsize='28'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0fixri604hthtq10q908500haptj].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6F127B1B-5F26-416B-BEBA-818D21DC6D90}' />
+    </worksheet>
+    <worksheet name='No of the employee by age group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Tableau Semibold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+              <calculation class='tableau' formula='2.' />
+              <range granularity='1.0' max='10.0' min='2.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Age Parameter]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[EmployeeCount]' derivation='Sum' name='[sum:EmployeeCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='stroke-color' value='#f2f2f218' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' />
+              <text column='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#ffffff'>&lt;</run>
+                <run fontcolor='#ffffff'>[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]</run>
+                <run fontcolor='#ffffff'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]</rows>
+        <cols>[federated.0fixri604hthtq10q908500haptj].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0fixri604hthtq10q908500haptj].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7D3A511C-B217-4E2D-869B-5290FB0CC357}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='HR ANALYSTICS DASHBOARD'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='color' value='#ffffff' />
+          <format attr='font-family' value='Tableau Semibold' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size maxheight='980' maxwidth='1180' minheight='980' minwidth='1180' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='HR_Analytics' name='federated.0fixri604hthtq10q908500haptj' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Bin Size' datatype='real' default-format='n#,##0;-#,##0' name='[Age Parameter]' param-domain-type='range' role='measure' type='quantitative' value='2.'>
+          <calculation class='tableau' formula='2.' />
+          <range granularity='1.0' max='10.0' min='2.0' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.0fixri604hthtq10q908500haptj'>
+        <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+        <column-instance column='[EducationField]' derivation='None' name='[none:EducationField:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98368' id='28' param='horz' type-v2='layout-flow' w='98644' x='678' y='816'>
+            <zone h='98368' id='19' type-v2='layout-basic' w='98644' x='678' y='816'>
+              <zone h='98368' id='22' is-scaled='1' param='C:/Users/Administrator/Desktop/Data science/Tableau For Data Analysics/HR background.pptx.png' type-v2='bitmap' w='98644' x='678' y='816'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8367' id='29' name='KPI' show-title='false' w='83136' x='1610' y='23980' />
+        <zone h='9898' id='30' name='Attrition by Gender' w='12458' x='85932' y='23367' />
+        <zone forceUpdate='true' h='3265' id='31' type-v2='text' w='94915' x='1864' y='17959'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e6e6e6' fontname='Tableau Bold' fontsize='26'>HR DATA ANAYTICS DASHBOARD</run>
+          </formatted-text>
+        </zone>
+        <zone h='26224' id='32' name='Department wise Attrition' w='27797' x='1695' y='34898' />
+        <zone h='7959' id='33' name='Department wise Attrition' pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]' type-v2='color' w='10800' x='1600' y='51837' />
+        <zone h='26837' id='34' name='No of the employee by age group' w='33475' x='31102' y='34592' />
+        <zone h='4592' id='35' mode='slider' param='[Parameters].[Age Parameter]' type-v2='paramctrl' w='14915' x='49068' y='37755' />
+        <zone h='5714' id='36' name='No of the employee by age group' pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' type-v2='color' w='10763' x='31356' y='36837' />
+        <zone h='27041' id='37' name='Job Satisfication Rating' w='32373' x='65763' y='34490' />
+        <zone h='19082' id='38' name='Education Field wise Attrition' w='26525' x='1441' y='63265' />
+        <zone h='19286' id='39' name='Attrition Rate by Gender for different Age group' w='69322' x='29322' y='63163' />
+        <zone h='3878' id='40' name='Attrition Rate by Gender for different Age group' pane-specification-id='1' param='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' type-v2='color' w='26610' x='70763' y='63367' />
+        <zone h='4082' id='41' mode='checkdropdown' name='Education Field wise Attrition' param='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]' type-v2='filter' values='database' w='22797' x='60254' y='17653' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98368' id='42' param='vert' type-v2='layout-flow' w='98644' x='678' y='816'>
+                <zone fixed-size='280' h='98368' id='22' is-fixed='true' is-scaled='1' param='C:/Users/Administrator/Desktop/Data science/Tableau For Data Analysics/HR background.pptx.png' type-v2='bitmap' w='98644' x='678' y='816'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3265' id='31' type-v2='text' w='94915' x='1864' y='17959'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e6e6e6' fontname='Tableau Bold' fontsize='26'>HR DATA ANAYTICS DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='97' h='9898' id='30' is-fixed='true' name='Attrition by Gender' w='12458' x='85932' y='23367'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='82' h='8367' id='29' is-fixed='true' name='KPI' show-title='false' w='83136' x='1610' y='23980'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='27041' id='37' is-fixed='true' name='Job Satisfication Rating' w='32373' x='65763' y='34490'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='26837' id='34' is-fixed='true' name='No of the employee by age group' w='33475' x='31102' y='34592'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5714' id='36' name='No of the employee by age group' pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' type-v2='color' w='10763' x='31356' y='36837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='257' h='26224' id='32' is-fixed='true' name='Department wise Attrition' w='27797' x='1695' y='34898'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7959' id='33' name='Department wise Attrition' pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]' type-v2='color' w='10800' x='1600' y='51837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4592' id='35' mode='slider' param='[Parameters].[Age Parameter]' type-v2='paramctrl' w='14915' x='49068' y='37755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='19286' id='39' is-fixed='true' name='Attrition Rate by Gender for different Age group' w='69322' x='29322' y='63163'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3878' id='40' name='Attrition Rate by Gender for different Age group' pane-specification-id='1' param='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' type-v2='color' w='26610' x='70763' y='63367'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4082' id='41' mode='checkdropdown' name='Education Field wise Attrition' param='[federated.0fixri604hthtq10q908500haptj].[none:EducationField:nk]' type-v2='filter' values='database' w='22797' x='60254' y='17653'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='187' h='19082' id='38' is-fixed='true' name='Education Field wise Attrition' w='26525' x='1441' y='63265'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9F45D439-7032-4DA5-9C5F-76D0946547E2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0fixri604hthtq10q908500haptj].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+            <card param='[federated.0fixri604hthtq10q908500haptj].[none:Education:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBAAD37E-22EB-455F-9E08-5843F9F9A630}' />
+    </window>
+    <window class='worksheet' name='Attrition by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DEF3481A-3E6E-499A-BC7A-6430AAD2EC81}' />
+    </window>
+    <window class='worksheet' name='Department wise Attrition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[none:Department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7271C907-367C-49D4-944A-9092B62A0262}' />
+    </window>
+    <window class='worksheet' name='No of the employee by age group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Age Parameter]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2257ADA4-D291-4DC5-A50D-0FE8A48B4B57}' />
+    </window>
+    <window class='worksheet' name='Job Satisfication Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fixri604hthtq10q908500haptj].[sum:EmployeeCount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E757AD7C-8AB6-49EB-BF5A-EDF09969609E}' />
+    </window>
+    <window class='worksheet' name='Education Field wise Attrition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8737BB52-C00D-4740-A10B-BDCA2C8A5505}' />
+    </window>
+    <window class='worksheet' name='Attrition Rate by Gender for different Age group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0fixri604hthtq10q908500haptj].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{936FE4D5-205E-4278-8E7E-F005974D72C2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='HR ANALYSTICS DASHBOARD'>
+      <viewpoints>
+        <viewpoint name='Attrition Rate by Gender for different Age group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Attrition by Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Department wise Attrition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Education Field wise Attrition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Job Satisfication Rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No of the employee by age group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='39' />
+      <simple-id uuid='{9C6C62BE-0409-4AC7-B8AE-F330F4AA80A7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='HR ANALYSTICS DASHBOARD' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
