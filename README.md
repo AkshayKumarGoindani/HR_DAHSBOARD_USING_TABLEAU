@@ -1,5 +1,5 @@
 # HR_DAHSBOARD_USING_TABLEAU
-Power BI HR Analytical report contains a dashboard for analyzing and visualizing:
+Tableau HR Analytical report contains a dashboard for analyzing and visualizing:
 
 1- count of empl id
 2- Attrition
